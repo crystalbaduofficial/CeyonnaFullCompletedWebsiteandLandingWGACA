@@ -1,0 +1,261 @@
+.quotes {
+    display: flex;
+    width: 100%;
+    padding: 5% 0%;
+    font-family: var(--font-family);
+    flex-direction: column; 
+    color: rgb(255, 255, 255);
+}
+.quotes__text > h1 {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0.3rem;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+.quotes__text {
+    display: flex;
+    padding: 50px;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+    flex: 1;
+}
+.quote__container {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    line-height: 48px;
+}
+.quote__container > h1 {
+    display: flex;
+    font-size: 24px;
+    font-weight: 300;
+}
+.quote__container > p {
+    display: flex;
+    font-size: 20px;
+    margin-top: 2%;
+    font-weight: 300;
+    color: rgb(138, 138, 138);
+    text-align: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1050px) {
+    .quotes__text > h1 {
+        font-size: 30px;
+        font-weight: 500;
+        letter-spacing: 0.3rem;
+        align-items: center;
+        text-align: center;
+    }
+    .quotes__text {
+        display: flex;
+        padding: 10px;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-around;
+        flex: 1;
+    }
+    .quote__container {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        padding: 1%;
+        line-height: 40px;
+    }
+    .quote__container > h1 {
+        display: flex;
+        font-size: 22px;
+        font-weight: 300;
+    }
+    .quote__container > p {
+        display: flex;
+        font-size: 20px;
+        margin-top: 2%;
+        font-weight: 300;
+        color: rgb(138, 138, 138);
+        text-align: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 775px) {
+    .quotes__text {
+        display: flex;
+        padding: 5px;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-around;
+        flex: 1;
+    }
+    .quote__container {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+        line-height: 38px;
+    }
+    .quote__container > h1 {
+        display: flex;
+        font-size: 18px;
+        font-weight: 300;
+    }
+    .quote__container > p {
+        display: flex;
+        font-size: 20px;
+        margin-top: 0%;
+        font-weight: 300;
+        color: rgb(138, 138, 138);
+        text-align: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 575px) {
+    .quotes__text {
+        display: flex;
+        padding: 3px;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-around;
+        flex: 1;
+    }
+    .quote__container {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+        line-height: 35px;
+    }
+    .quote__container > h1 {
+        display: flex;
+        font-size: 15px;
+        font-weight: 300;
+    }
+    .quote__container > p {
+        display: flex;
+        font-size: 15px;
+        margin-top: 0%;
+        font-weight: 300;
+        color: rgb(138, 138, 138);
+        text-align: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 420px) {
+    .quotes__text {
+        display: flex;
+        padding: 3px;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-around;
+        flex: 1;
+    }
+    .quote__container {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        padding: 1%;
+        line-height: 28px;
+    }
+    .quote__container > h1 {
+        display: flex;
+        font-size: 17px;
+        font-weight: 100;
+    }
+    .quote__container > p {
+        display: flex;
+        font-size: 15px;
+        margin-top: 0%;
+        font-weight: 300;
+        color: rgb(138, 138, 138);
+        text-align: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 360px) {
+    .quotes__text {
+        display: flex;
+        padding: 2px;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-around;
+        flex: 1;
+    }
+    .quote__container {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        padding: 0%;
+        line-height: 29px;
+    }
+    .quotes__text > h1 {
+        font-size: 20px;
+        font-weight: 800;
+        margin-top: -1rem;
+    }
+    .quote__container > h1 {
+        display: flex;
+        font-size: 15px;
+        font-weight: 200;
+    }
+    .quote__container > p {
+        display: flex;
+        font-size: 15px;
+        margin-top: 0%;
+        font-weight: 200;
+        color: rgb(138, 138, 138);
+        text-align: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 310px) {
+    .quotes__text {
+        display: flex;
+        padding: 2px;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-around;
+        flex: 1;
+    }
+    .quote__container {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        padding: 0%;
+        line-height: 17px;
+    }
+    .quotes__text > h1 {
+        font-size: 20px;
+        font-weight: 800;
+    }
+    .quote__container > h1 {
+        display: flex;
+        font-size: 15px;
+        font-weight: 200;
+    }
+    .quote__container > p {
+        display: flex;
+        font-size: 14px;
+        font-weight: 200;
+        color: rgb(138, 138, 138);
+        text-align: center;
+        justify-content: center;
+    }
+}

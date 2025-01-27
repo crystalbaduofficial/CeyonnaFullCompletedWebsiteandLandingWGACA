@@ -1,0 +1,34 @@
+.form__contact {
+    width: 100%;
+    background: #132347;
+    padding: 30px;
+    border-radius: 5px;
+    display: block;
+    margin-top: 1%;
+   
+    
+}
+
+.form__input > input, 
+.form__input > textarea {
+    width: 100%;
+    padding: 10px 15px;
+    color:black;
+    margin-bottom: 15px;
+    background: rgba(255, 255, 255, 0.877);
+    border: none;
+    outline: none;
+    font-size: large;
+    border-radius: 5px;
+}
+
+.submitBtn {
+    margin-top: 15px;
+    padding: 7px 15px;
+    font-size: .9rem;
+    background: #7865ff;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}

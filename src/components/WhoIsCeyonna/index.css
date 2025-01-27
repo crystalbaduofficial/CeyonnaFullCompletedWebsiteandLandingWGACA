@@ -1,0 +1,150 @@
+/* Add or modify these styles */
+.etw__page {
+    margin: 1rem;
+
+}
+
+.etheware {
+    color: black;
+    background-color: rgb(236, 236, 236);
+    padding: 2%;
+    font-family: var(--font-family);
+    margin-top: 8%;
+}
+.etheware__content {
+    display: flex;
+    color: black;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* Adjust spacing and width as needed */
+    padding: 5px;
+    line-height: 8rem;
+  }
+  
+  .etheware__left {
+    flex: 1;
+    margin-right: 20px; /* Add some space between the image and text */
+    padding: 2rem;
+  }
+
+  .etheware__left h1 {
+    margin-bottom: 7%;
+    font-weight: 400;
+  }
+
+  .etheware__left img {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   object-fit: contain;
+   width: 100%;
+
+  }
+  
+  .etheware__right {
+    flex: 1.2; /* Adjust the width ratio between left and right as needed */
+    margin-top: 1%;
+  }
+  
+
+  .etheware__right h2 {
+    margin-bottom: -2%;
+    font-weight: 400;
+    font-size: 2rem;
+    margin-top: -5%;
+  }
+  .etheware__right .subheader {
+    margin-bottom: -3%;
+    font-weight: 300;
+    font-size: 2.2rem;
+    margin-top: -5%;
+  }
+
+  .etheware__right p {
+    margin-bottom: 4%;
+    display: flex;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 2.1rem;
+  }
+.business a {
+    color: white;
+    padding-left: 0.2rem;
+}
+ 
+  /* Existing styles for .etheware__icon and .icon go here */
+  
+  /* Additional styles for social links as needed */
+  
+  /* Adjust styles for text paragraphs and headings as needed */
+  
+
+  /* Media query for screens up to 768px (mobile) */
+@media screen and (max-width: 1024px) {
+    .etheware {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .etheware__content {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 15%;
+        padding-top: 0%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 0%;
+    }
+
+    .etheware__left {
+        margin-right: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .etheware__right {
+        flex: 1;
+        margin-top: 20px;
+    }
+
+    .etheware__right h1 {
+        font-size: 24px;
+        width: 100%;
+        line-height: 1.6rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .subheader {
+      line-height: 3.5rem;
+    }
+
+    .etheware__right p {
+        margin-bottom: 10%;
+        font-size: 16px;
+    }
+    .business a {
+        width: 100%;
+        margin-right: 10%;
+    }
+    /* Media query for Samsung Galaxy Fold */
+@media screen and (max-width: 50px) {
+    .etheware__left img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .etheware__right p {
+        font-size: 14px;
+    }
+
+    .etheware__right h1 {
+        font-size: 14px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+}
