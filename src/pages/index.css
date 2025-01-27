@@ -1,0 +1,30 @@
+.page__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%; /* Ensures the wrapper spans the full width */
+    max-height: 100vh; /* Covers the entire viewport height */
+    margin: 0 auto; /* Centers the wrapper horizontally */
+    padding: 0; /* Removes extra padding */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    box-sizing: border-box; /* Includes padding and border in total size */
+  }
+
+  .testimonials__pg {
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .home {
+    width: 100%; /* Ensures the inner content spans the full width */
+    padding: 0 1rem; /* Adds space around the content */
+    box-sizing: border-box;
+  }
+  
+  @media (max-width: 931px) {
+    .home {
+      padding: 0rem; /* Adds space around the content */
+      
+    }
+  }

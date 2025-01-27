@@ -1,0 +1,31 @@
+.banner {
+    height: 50%;
+    position: relative;
+}
+.banner__content {
+    display: flex;
+    color: white;
+    font-family: var(--font-family);
+    flex-direction: column;
+    line-height: 3rem;
+    padding: 5rem;
+    height: 50%;
+    position: relative;
+}
+
+.banner__content > h1 {
+    font-size: 60px;
+    margin-bottom: 5%;
+    font-weight: 500;
+}
+.banner__content > p {
+    font-size: 25px;
+    margin-bottom: 5%;
+    line-height: 4rem;
+    font-weight: 400;
+}
+.banner__content > p2 {
+    font-size: 25px;
+    line-height: 4rem;
+    font-weight: 400;
+}
