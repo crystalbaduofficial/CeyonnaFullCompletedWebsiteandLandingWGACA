@@ -1,0 +1,16 @@
+.announcement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex: 1;
+    font-family: var(--font-family);
+    height: 90px;
+    border-top: 2px solid white ;
+}
+
+.announcement > h1 {
+    color: white;
+    font-weight: 200;
+    letter-spacing: 0.1rem;
+}
