@@ -1,0 +1,313 @@
+.navbar {
+    display: flex;
+    background: transparent;
+    height: 122px;
+    width: 100%;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    right: 0; 
+    position:absolute;
+    margin: 1rem 0;
+    width: 100%;
+    border: none;
+    border-color: transparent;
+}
+
+/* Logo */
+.navbar__logo {
+    display: block;
+    background-position: center;
+    margin: 0 auto;
+}
+.navbar__logo > a > img {
+    width: 220px;
+    display: flex;
+}
+
+/* Link Container */
+.navbar__links {
+    margin: 0 auto;
+    margin-top: 1.2rem;
+    font-family: var(--font-family);
+}
+
+.nav__container > p:hover {
+    cursor: pointer;
+    color: #828282;
+    animation: forwards 500ms;
+}
+
+.nav__container > a > button {
+    flex: 0.9;
+    width: 100%;
+    font-size: 17px;
+    letter-spacing: 1.5px;
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+    padding: 0 3rem;
+    border: 5px white solid;
+    align-items: center;
+    text-align: center;
+    height: 4.9rem;
+    border-radius: 100px;
+}
+
+.nav__container > button a {
+    align-items: center;
+    text-align: center;
+    font-size: 19px;
+}
+
+.navbar__links-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 0px;
+}
+.nav__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 0px;
+    width: 1100px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+.navbar__links-container > .nav__container > p > a{
+    color: #fff;
+    text-decoration: none;
+    font-family: var(--font-family);
+    outline: none;
+    font-size: 20px;
+    font-weight: 400;
+    opacity: 1;
+    transition: opacity 800ms;
+    margin: 1.8rem;
+    display: flex;
+    text-decoration: none;
+}
+
+/* Navbar Hamburgular Menu :) */
+.navbar__menu {
+    justify-content: flex-start;
+    display: none;
+    transition-property: transform, top;
+    transition-delay: 0ms, 0ms;
+    transition-duration: 100ms;
+    display: flex;
+    background-position: center;
+    margin-left: -1rem;
+    background-repeat: no-repeat;
+    z-index: 100; 
+}
+.menu > button:hover {
+    background: white;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+}
+
+
+/* Menu Icon */
+.navbar__menu > svg {
+    cursor: pointer;
+}
+/* Menu Container */
+.nav-menu__container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: start;
+    background-color: black;
+    padding: 2rem;
+    position: fixed;
+    min-width: 100%;
+}
+.navbar__menu > :first-child {
+    z-index: 1000;
+    left: 0;
+    border-radius: 50px;
+    right: 0;
+}
+
+
+.nav-menu__container > p {
+    margin: 1rem 0;
+}
+.menu__links {
+    width: 100%;
+}
+/* Styling for the Menu Text */
+.menu__links > nav > p > a {
+    display: flex;
+    color: #fff;;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    line-height: 8.5rem;
+    width: 100%;
+    margin: 5rem;
+}
+
+/* Hover Styling for the Menu Text */
+.menu__links > nav > p > a:hover{
+    cursor: pointer;
+    color: #828282;
+    animation: forwards 500ms;
+}
+.menu__links > nav > img{
+    display: flex;
+    object-fit: contain;
+    width: 100%;
+}
+.menu__links > nav > img:hover{
+    border: 1px solid #0095ff;
+    background: #0095ff;
+    cursor: pointer;
+}
+/* Menu */
+.navbar__menu {
+    justify-content: flex-start;
+    display: none;
+}
+.menu > button:hover {
+    background: white;
+    cursor: pointer;
+}
+
+/* Media Query */
+@media screen and (max-width: 1430px) {
+    .navbar {
+        top: 0;
+        left: 0;
+        width: 100%;
+        justify-content: start;
+        transition: left 1000ms ease;
+    }
+    .navbar__logo {
+        display: flex;
+        justify-content: flex-start;
+        flex: 1;
+        padding-left: 4rem;
+    }
+    .navbar__logo > a > img {
+        width: 170px;
+        display: flex;
+    }
+    .navbar__links-container {
+        display: none;
+    }
+    .nav-menu__container {
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+    }
+    .nav__container > p {
+        display: none;
+    }
+    .navbar__menu {
+        flex: 1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        justify-content: flex-end;
+        align-items: center;
+        color: #fff;
+        display: flex;
+        opacity: 1;
+        width: 100%;
+        transition-property: transform, top;
+    }
+
+    .navbar__menu > :first-child{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        position: relative;
+        width: 100px;
+        height: 35px;
+    }
+    .nav__container > button {
+        display: none;
+    }
+    .menubutton > button {
+        display: flex;
+        font-size: 1.7rem;
+        width: 100%;
+        background-color: transparent;
+        color: white;
+        padding: 0 2rem;
+        margin-top: 10%;
+        border: 6px white solid;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        height: 6.5rem;
+        border-radius: 100px;
+    }
+    .menubutton > button:hover {
+        background-color: white;
+        color: black;
+        animation: ease-in 200ms linear;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .menu__links > nav > p > a {
+        font-size: 30px;
+        margin: 4rem;
+    }
+    .navbar__menu {
+        align-items: center;
+    }
+    .menu__links > nav > p > a { 
+        line-height: 5rem;
+    }
+    .navbar__menu > :first-child{
+        width: 100px;
+        height: 29px;
+    }
+    .navbar__menu {
+        height: 0%;
+    }
+}
+@media screen and (max-width: 510px) {
+    .menu__links > nav > p > a {
+        font-size: 30px;
+        margin: 4rem;
+    }
+    .navbar__menu > :first-child{
+        width: 100px;
+        height: 18px;
+    }
+    .navbar__links {
+        margin-top: 0.6rem;
+   }
+}
+@media screen and (max-width: 415px) {
+
+    .navbar__menu > :first-child{
+        width: 100px;
+        height: 18px;
+    }
+    .navbar__links {
+        margin-top: 0.6rem;
+   }
+}
+@media screen and (max-width: 390px) {
+    .navbar__menu > :first-child{
+        width: 100px;
+        height: 16px;
+    }
+   .navbar__links {
+        margin-top: 0.6rem;
+   }
+}
